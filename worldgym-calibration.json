@@ -1,0 +1,542 @@
+{
+  "protocol": {
+    "model": "claude-opus-5-5",
+    "effort": "high",
+    "responses_per_episode": 3,
+    "partial_credit": false,
+    "selection_seed": 0,
+    "episodes_per_task_and_outcome": 6,
+    "label_selection": "Episodes with matching binary outcomes in both human annotation sets.",
+    "resampling": "round(linspace(0, video_frames - 1, 41)); score frames 0, 20, 40"
+  },
+  "episodes": [
+    {
+      "stem": "put the eggplant in the blue sink_20260124_215830",
+      "task": "put the eggplant in the blue sink",
+      "label": 1,
+      "video_frames": 80,
+      "source_frames": [
+        0,
+        40,
+        79
+      ]
+    },
+    {
+      "stem": "put the eggplant in the blue sink_20260126_200515",
+      "task": "put the eggplant in the blue sink",
+      "label": 1,
+      "video_frames": 80,
+      "source_frames": [
+        0,
+        40,
+        79
+      ]
+    },
+    {
+      "stem": "put the eggplant in the blue sink_20260126_195633",
+      "task": "put the eggplant in the blue sink",
+      "label": 1,
+      "video_frames": 80,
+      "source_frames": [
+        0,
+        40,
+        79
+      ]
+    },
+    {
+      "stem": "put the eggplant in the blue sink_20260124_222342",
+      "task": "put the eggplant in the blue sink",
+      "label": 1,
+      "video_frames": 80,
+      "source_frames": [
+        0,
+        40,
+        79
+      ]
+    },
+    {
+      "stem": "put the eggplant in the blue sink_20260124_171253",
+      "task": "put the eggplant in the blue sink",
+      "label": 1,
+      "video_frames": 100,
+      "source_frames": [
+        0,
+        50,
+        99
+      ]
+    },
+    {
+      "stem": "put the eggplant in the blue sink_20260126_222717",
+      "task": "put the eggplant in the blue sink",
+      "label": 1,
+      "video_frames": 80,
+      "source_frames": [
+        0,
+        40,
+        79
+      ]
+    },
+    {
+      "stem": "put the eggplant in the blue sink_20260126_170421",
+      "task": "put the eggplant in the blue sink",
+      "label": 0,
+      "video_frames": 81,
+      "source_frames": [
+        0,
+        40,
+        80
+      ]
+    },
+    {
+      "stem": "put the eggplant in the blue sink_20260124_191626",
+      "task": "put the eggplant in the blue sink",
+      "label": 0,
+      "video_frames": 100,
+      "source_frames": [
+        0,
+        50,
+        99
+      ]
+    },
+    {
+      "stem": "put the eggplant in the blue sink_20260126_215705",
+      "task": "put the eggplant in the blue sink",
+      "label": 0,
+      "video_frames": 80,
+      "source_frames": [
+        0,
+        40,
+        79
+      ]
+    },
+    {
+      "stem": "put the eggplant in the blue sink_20260124_225430",
+      "task": "put the eggplant in the blue sink",
+      "label": 0,
+      "video_frames": 80,
+      "source_frames": [
+        0,
+        40,
+        79
+      ]
+    },
+    {
+      "stem": "put the eggplant in the blue sink_20260124_222155",
+      "task": "put the eggplant in the blue sink",
+      "label": 0,
+      "video_frames": 80,
+      "source_frames": [
+        0,
+        40,
+        79
+      ]
+    },
+    {
+      "stem": "put the eggplant in the blue sink_20260127_140434",
+      "task": "put the eggplant in the blue sink",
+      "label": 0,
+      "video_frames": 100,
+      "source_frames": [
+        0,
+        50,
+        99
+      ]
+    },
+    {
+      "stem": "put the eggplant in the yellow basket_20260124_222447",
+      "task": "put the eggplant in the yellow basket",
+      "label": 1,
+      "video_frames": 100,
+      "source_frames": [
+        0,
+        50,
+        99
+      ]
+    },
+    {
+      "stem": "put the eggplant in the yellow basket_20260126_171437",
+      "task": "put the eggplant in the yellow basket",
+      "label": 1,
+      "video_frames": 100,
+      "source_frames": [
+        0,
+        50,
+        99
+      ]
+    },
+    {
+      "stem": "put the eggplant in the yellow basket_20260126_201133",
+      "task": "put the eggplant in the yellow basket",
+      "label": 1,
+      "video_frames": 100,
+      "source_frames": [
+        0,
+        50,
+        99
+      ]
+    },
+    {
+      "stem": "put the eggplant in the yellow basket_20260128_203951",
+      "task": "put the eggplant in the yellow basket",
+      "label": 1,
+      "video_frames": 100,
+      "source_frames": [
+        0,
+        50,
+        99
+      ]
+    },
+    {
+      "stem": "put the eggplant in the yellow basket_20260127_014929",
+      "task": "put the eggplant in the yellow basket",
+      "label": 1,
+      "video_frames": 100,
+      "source_frames": [
+        0,
+        50,
+        99
+      ]
+    },
+    {
+      "stem": "put the eggplant in the yellow basket_20260128_202449",
+      "task": "put the eggplant in the yellow basket",
+      "label": 1,
+      "video_frames": 100,
+      "source_frames": [
+        0,
+        50,
+        99
+      ]
+    },
+    {
+      "stem": "put the eggplant in the yellow basket_20260124_202755",
+      "task": "put the eggplant in the yellow basket",
+      "label": 0,
+      "video_frames": 100,
+      "source_frames": [
+        0,
+        50,
+        99
+      ]
+    },
+    {
+      "stem": "put the eggplant in the yellow basket_20260127_024855",
+      "task": "put the eggplant in the yellow basket",
+      "label": 0,
+      "video_frames": 100,
+      "source_frames": [
+        0,
+        50,
+        99
+      ]
+    },
+    {
+      "stem": "put the eggplant in the yellow basket_20260124_210406",
+      "task": "put the eggplant in the yellow basket",
+      "label": 0,
+      "video_frames": 100,
+      "source_frames": [
+        0,
+        50,
+        99
+      ]
+    },
+    {
+      "stem": "put the eggplant in the yellow basket_20260127_215859",
+      "task": "put the eggplant in the yellow basket",
+      "label": 0,
+      "video_frames": 100,
+      "source_frames": [
+        0,
+        50,
+        99
+      ]
+    },
+    {
+      "stem": "put the eggplant in the yellow basket_20260128_225805",
+      "task": "put the eggplant in the yellow basket",
+      "label": 0,
+      "video_frames": 100,
+      "source_frames": [
+        0,
+        50,
+        99
+      ]
+    },
+    {
+      "stem": "put the eggplant in the yellow basket_20260127_134953",
+      "task": "put the eggplant in the yellow basket",
+      "label": 0,
+      "video_frames": 100,
+      "source_frames": [
+        0,
+        50,
+        99
+      ]
+    },
+    {
+      "stem": "open the drawer_20260123_193615",
+      "task": "open the drawer",
+      "label": 1,
+      "video_frames": 70,
+      "source_frames": [
+        0,
+        34,
+        69
+      ]
+    },
+    {
+      "stem": "open the drawer_20260126_111409",
+      "task": "open the drawer",
+      "label": 1,
+      "video_frames": 70,
+      "source_frames": [
+        0,
+        34,
+        69
+      ]
+    },
+    {
+      "stem": "open the drawer_20260126_133956",
+      "task": "open the drawer",
+      "label": 1,
+      "video_frames": 70,
+      "source_frames": [
+        0,
+        34,
+        69
+      ]
+    },
+    {
+      "stem": "open the drawer_20260126_114130",
+      "task": "open the drawer",
+      "label": 1,
+      "video_frames": 71,
+      "source_frames": [
+        0,
+        35,
+        70
+      ]
+    },
+    {
+      "stem": "open the drawer_20260126_111134",
+      "task": "open the drawer",
+      "label": 1,
+      "video_frames": 70,
+      "source_frames": [
+        0,
+        34,
+        69
+      ]
+    },
+    {
+      "stem": "open the drawer_20260124_133351",
+      "task": "open the drawer",
+      "label": 1,
+      "video_frames": 70,
+      "source_frames": [
+        0,
+        34,
+        69
+      ]
+    },
+    {
+      "stem": "open the drawer_20260127_151335",
+      "task": "open the drawer",
+      "label": 0,
+      "video_frames": 70,
+      "source_frames": [
+        0,
+        34,
+        69
+      ]
+    },
+    {
+      "stem": "open the drawer_20260126_000500",
+      "task": "open the drawer",
+      "label": 0,
+      "video_frames": 70,
+      "source_frames": [
+        0,
+        34,
+        69
+      ]
+    },
+    {
+      "stem": "open the drawer_20260125_233844",
+      "task": "open the drawer",
+      "label": 0,
+      "video_frames": 70,
+      "source_frames": [
+        0,
+        34,
+        69
+      ]
+    },
+    {
+      "stem": "open the drawer_20260125_214541",
+      "task": "open the drawer",
+      "label": 0,
+      "video_frames": 70,
+      "source_frames": [
+        0,
+        34,
+        69
+      ]
+    },
+    {
+      "stem": "open the drawer_20260126_140941",
+      "task": "open the drawer",
+      "label": 0,
+      "video_frames": 70,
+      "source_frames": [
+        0,
+        34,
+        69
+      ]
+    },
+    {
+      "stem": "open the drawer_20260127_144727",
+      "task": "open the drawer",
+      "label": 0,
+      "video_frames": 70,
+      "source_frames": [
+        0,
+        34,
+        69
+      ]
+    },
+    {
+      "stem": "close the drawer_20260126_205758",
+      "task": "close the drawer",
+      "label": 1,
+      "video_frames": 70,
+      "source_frames": [
+        0,
+        34,
+        69
+      ]
+    },
+    {
+      "stem": "close the drawer_20260126_202521",
+      "task": "close the drawer",
+      "label": 1,
+      "video_frames": 70,
+      "source_frames": [
+        0,
+        34,
+        69
+      ]
+    },
+    {
+      "stem": "close the drawer_20260126_204022",
+      "task": "close the drawer",
+      "label": 1,
+      "video_frames": 70,
+      "source_frames": [
+        0,
+        34,
+        69
+      ]
+    },
+    {
+      "stem": "close the drawer_20260128_215713",
+      "task": "close the drawer",
+      "label": 1,
+      "video_frames": 70,
+      "source_frames": [
+        0,
+        34,
+        69
+      ]
+    },
+    {
+      "stem": "close the drawer_20260126_200722",
+      "task": "close the drawer",
+      "label": 1,
+      "video_frames": 70,
+      "source_frames": [
+        0,
+        34,
+        69
+      ]
+    },
+    {
+      "stem": "close the drawer_20260128_202420",
+      "task": "close the drawer",
+      "label": 1,
+      "video_frames": 70,
+      "source_frames": [
+        0,
+        34,
+        69
+      ]
+    },
+    {
+      "stem": "close the drawer_20260128_172720",
+      "task": "close the drawer",
+      "label": 0,
+      "video_frames": 70,
+      "source_frames": [
+        0,
+        34,
+        69
+      ]
+    },
+    {
+      "stem": "close the drawer_20260128_173415",
+      "task": "close the drawer",
+      "label": 0,
+      "video_frames": 70,
+      "source_frames": [
+        0,
+        34,
+        69
+      ]
+    },
+    {
+      "stem": "close the drawer_20260129_013949",
+      "task": "close the drawer",
+      "label": 0,
+      "video_frames": 70,
+      "source_frames": [
+        0,
+        34,
+        69
+      ]
+    },
+    {
+      "stem": "close the drawer_20260126_210900",
+      "task": "close the drawer",
+      "label": 0,
+      "video_frames": 70,
+      "source_frames": [
+        0,
+        34,
+        69
+      ]
+    },
+    {
+      "stem": "close the drawer_20260128_212820",
+      "task": "close the drawer",
+      "label": 0,
+      "video_frames": 70,
+      "source_frames": [
+        0,
+        34,
+        69
+      ]
+    },
+    {
+      "stem": "close the drawer_20260127_163509",
+      "task": "close the drawer",
+      "label": 0,
+      "video_frames": 70,
+      "source_frames": [
+        0,
+        34,
+        69
+      ]
+    }
+  ]
+}

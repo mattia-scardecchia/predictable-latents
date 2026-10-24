@@ -1,0 +1,10 @@
+method: conditioned
+ae:
+  model:
+    encoder:
+      future_pred_weight: 0.7
+wm: {}
+seeds:
+- 1234
+- 2345
+- 3456

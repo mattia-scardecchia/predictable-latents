@@ -1,0 +1,8 @@
+extends: matched_budget_ordinary
+ae: null
+wm:
+  repr:
+    type: hf-vae
+    ckpt: ${assets_root}/flux1-schnell
+    params:
+      subfolder: vae

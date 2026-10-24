@@ -1,0 +1,11 @@
+extends: matched_budget_ordinary
+# Temporal weights in the paper: model.encoder.future_pred_weight = 0, 0.1, 0.3, 0.5, 0.7 (via --set).
+ae:
+  training:
+    checkpoint_every_n_steps: 20000
+  model:
+    encoder:
+      future_pred_weight: 0.3
+seeds:
+- 1234
+- 2345

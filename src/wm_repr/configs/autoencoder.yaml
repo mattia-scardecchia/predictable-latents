@@ -1,0 +1,60 @@
+seed: 1234
+assets_root: assets
+output_dir: outputs/run
+repr:
+  type: hf-vae
+  ckpt: ${assets_root}/flux1-schnell
+  params:
+    subfolder: vae
+data:
+  target: wm_repr.data.dataset.OpenXMP4TCDataset
+  params:
+    root_path: data
+    input_h: 256
+    input_w: 256
+    action_dim: 11
+    subset_names: bridge_v2
+    max_videos: null
+    sample_other: false
+    fixed_eval_pairs: true
+    seed: 42
+model:
+  encoder:
+    kl_weight: 0.0
+  predictor:
+    d_model: 512
+    n_heads: 8
+    num_layers: 2
+    dropout: 0.0
+    max_actions: 128
+    mlp_mult: 4.0
+    conv_kernel_size: 3
+    norm_num_groups: 32
+training:
+  grad_clip_val: 0.5
+  optimizer:
+    defaults:
+      lr: 3.4641016151377543e-06  # 5e-7 * sqrt(batch size 48)
+      weight_decay: 0.0
+      fused: false
+  warmup:
+    start_factor: 0.0001
+    steps: 1000
+  dataloader:
+    batch_size: 48
+    pin_memory: true
+    persistent_workers: true
+    num_workers: 4
+  trainer:
+    max_steps: 80000
+    log_every_n_steps: 100
+    benchmark: false
+    deterministic: false
+    accelerator: gpu
+    devices: 1
+    precision: bf16-mixed
+    check_val_every_n_epoch: 1
+    num_sanity_val_steps: 0
+    enable_model_summary: false
+validation:
+  reconstruction_threshold: null

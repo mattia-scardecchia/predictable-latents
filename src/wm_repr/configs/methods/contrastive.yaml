@@ -1,0 +1,15 @@
+model:
+  class_name: LitContrastiveJEPA
+  predictor:
+    type: conv
+    action_encoder_layers: 2
+  encoder:
+    contrastive_loss_weight: 0.3
+    proj_head:
+      depth: 1
+      hidden_dim: 16
+      kernel_size: 7
+    ema:
+      decay: 0.9978
+    memory_bank:
+      size: 40960

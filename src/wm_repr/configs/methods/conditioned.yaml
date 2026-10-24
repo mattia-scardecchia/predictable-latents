@@ -1,0 +1,16 @@
+model:
+  class_name: LitHierarchicalJEPA
+  predictor:
+    type: conv
+    action_encoder_layers: 2
+  encoder:
+    future_pred_weight: 0.3
+  hierarchical_decoder:
+    num_heads: 8
+    dropout: 0.0
+    num_groups: 32
+    conv:
+      context_dim: 512
+    vit:
+      context_dim: 768
+      adapter_interval: 4

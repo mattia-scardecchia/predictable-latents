@@ -1,0 +1,71 @@
+seed: 1234
+assets_root: assets
+output_dir: outputs/run
+repr:
+  type: checkpoint
+  ckpt: ???
+data:
+  target: wm_repr.data.dataset.OpenXMP4FullDataset
+  params:
+    root_path: data
+    input_h: 256
+    input_w: 256
+    n_frames: 10
+    action_dim: 11
+    subset_names: bridge_v2
+    max_videos: null
+    fixed_eval_clips: true
+    seed: 42
+model:
+  timesteps: 1000
+  prediction_type: v
+  time_warp_gamma: 1.0
+  patch_size: 2
+  model_dim: 384
+  layers: 12
+  heads: 6
+  decoder_dim: null
+  decoder_depth: 0
+  decoder_heads: null
+  sampling:
+    sampling_timesteps: 10
+    window_len: null
+    horizon: 1
+    n_context_frames: 1
+    cfg_scale: 3.0
+training:
+  ema_decay: 0.999
+  cond_dropout: 0.1
+  base_learning_rate: 7.0e-05
+  latent_normalization: zscore-channel
+  exclude_context_from_metrics: true
+  trainer:
+    max_steps: 100000
+    log_every_n_steps: 100
+    limit_val_batches: 50
+    benchmark: false
+    deterministic: false
+    accelerator: gpu
+    devices: 1
+    precision: bf16-mixed
+    check_val_every_n_epoch: 1
+    gradient_clip_val: 0.5
+    gradient_clip_algorithm: norm
+    accumulate_grad_batches: 2
+    num_sanity_val_steps: 0
+    enable_model_summary: false
+  optimizer:
+    weight_decay: 0.02
+    betas:
+    - 0.9
+    - 0.99
+    fused: false
+  warmup:
+    enabled: true
+    warmup_steps: 3000
+    start_lr: 1.0e-07
+  dataloader:
+    batch_size: 8
+    pin_memory: true
+    persistent_workers: true
+    num_workers: 4

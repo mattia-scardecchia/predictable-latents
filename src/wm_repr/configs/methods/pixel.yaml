@@ -1,0 +1,7 @@
+model:
+  class_name: LitPixelPredictionJEPA
+  predictor:
+    type: conv
+    action_encoder_layers: 2
+  encoder:
+    future_recon_weight: 0.5

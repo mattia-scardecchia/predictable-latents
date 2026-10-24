@@ -1,0 +1,8 @@
+extends: matched_budget_latent
+wm:
+  training:
+    trainer:
+      max_steps: 200000
+seeds:
+- 1234
+- 2345

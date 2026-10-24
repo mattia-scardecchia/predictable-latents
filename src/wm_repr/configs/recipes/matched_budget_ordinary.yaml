@@ -1,0 +1,10 @@
+method: ordinary
+ae:
+  model:
+    encoder:
+      future_pred_weight: 0.0
+wm: {}
+seeds:
+- 1234
+- 2345
+- 3456

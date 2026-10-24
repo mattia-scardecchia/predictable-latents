@@ -1,0 +1,7 @@
+model:
+  class_name: LitTrueJEPA
+  predictor:
+    type: conv
+    action_encoder_layers: 2
+  encoder:
+    future_pred_weight: 0.3

@@ -1,0 +1,11 @@
+extends: matched_budget_latent
+wm:
+  model:
+    model_dim: 1024
+    layers: 16
+    heads: 16
+  training:
+    trainer:
+      max_steps: 200000
+seeds:
+- 1234

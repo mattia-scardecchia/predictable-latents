@@ -1,0 +1,28 @@
+{
+  "_name_or_path": "facebook/vit-mae-base",
+  "architectures": [
+    "ViTMAEForPreTraining"
+  ],
+  "attention_probs_dropout_prob": 0.0,
+  "decoder_hidden_size": 1152,
+  "decoder_intermediate_size": 4096,
+  "decoder_num_attention_heads": 16,
+  "decoder_num_hidden_layers": 28,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.0,
+  "hidden_size": "NEVER ACCESSED",
+  "image_size": "NEVER ACCESSED",
+  "initializer_range": 0.02,
+  "intermediate_size": "NEVER ACCESSED",
+  "layer_norm_eps": 1e-12,
+  "mask_ratio": "NEVER ACCESSED",
+  "model_type": "vit_mae",
+  "norm_pix_loss": "NEVER ACCESSED",
+  "num_attention_heads": "NEVER ACCESSED",
+  "num_channels": 3,
+  "num_hidden_layers": "NEVER ACCESSED",
+  "patch_size": "NEVER ACCESSED",
+  "qkv_bias": true,
+  "torch_dtype": "float32",
+  "transformers_version": "4.42.3"
+}

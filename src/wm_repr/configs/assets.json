@@ -1,0 +1,81 @@
+[
+  {
+    "path": "rae-dinov2-wreg-base/decoder_ViTXL_n08.pt",
+    "source": "https://huggingface.co/nyu-visionx/RAE-collections/resolve/1be4f03273523431f099a934da4cf1940dc6039f/decoders/dinov2/wReg_base/ViTXL_n08/model.pt",
+    "bytes": 1661589814,
+    "sha256": "5fedf7c9660476a709e122cef18385c917532914a23f034388e1c1a52bde2be6",
+    "component": "dino"
+  },
+  {
+    "path": "rae-dinov2-wreg-base/dinov2/model.safetensors",
+    "source": "https://huggingface.co/facebook/dinov2-with-registers-base/resolve/a1d738ccfa7ae170945f210395d99dde8adb1805/model.safetensors",
+    "bytes": 346358296,
+    "sha256": "7a6f7b3b9fa4b8732e707476a03cd6cdce210048582f21aafb7991c17d98e362",
+    "component": "dino"
+  },
+  {
+    "path": "rae-dinov2-wreg-base/dinov2/config.json",
+    "source": "https://huggingface.co/facebook/dinov2-with-registers-base/resolve/a1d738ccfa7ae170945f210395d99dde8adb1805/config.json",
+    "bytes": 1002,
+    "sha256": "6af60aa760138fc90db0ba37b7701730b140b9bf1742514412d03050e72bf7e0",
+    "component": "dino"
+  },
+  {
+    "path": "rae-dinov2-wreg-base/dinov2/preprocessor_config.json",
+    "source": "https://huggingface.co/facebook/dinov2-with-registers-base/resolve/a1d738ccfa7ae170945f210395d99dde8adb1805/preprocessor_config.json",
+    "bytes": 436,
+    "sha256": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828",
+    "component": "dino"
+  },
+  {
+    "path": "rae-dinov2-wreg-base/stat.pt",
+    "source": "https://huggingface.co/nyu-visionx/RAE-collections/resolve/1be4f03273523431f099a934da4cf1940dc6039f/stats/dinov2/wReg_base/imagenet1k/stat.pt",
+    "bytes": 787533,
+    "sha256": "84ede66def5e6e3f25679334dc89cf63b12aacb99cbf0f5ae7ed4ad3187f7e59",
+    "component": "dino"
+  },
+  {
+    "path": "lpips/vgg.pth",
+    "source": "https://raw.githubusercontent.com/richzhang/PerceptualSimilarity/082bb24f84c091ea94de2867d34c4544f68e0963/lpips/weights/v0.1/vgg.pth",
+    "bytes": 7289,
+    "sha256": "a78928a0af1e5f0fcb1f3b9e8f8c3a2a5a3de244d830ad5c1feddc79b8432868",
+    "component": "metrics"
+  },
+  {
+    "path": "torch/hub/checkpoints/vgg16-397923af.pth",
+    "source": "https://download.pytorch.org/models/vgg16-397923af.pth",
+    "bytes": 553433881,
+    "sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+    "component": "metrics"
+  },
+  {
+    "path": "torch/hub/checkpoints/weights-inception-2015-12-05-6726825d.pth",
+    "source": "https://github.com/toshas/torch-fidelity/releases/download/v0.2.0/weights-inception-2015-12-05-6726825d.pth",
+    "bytes": 95628359,
+    "sha256": "6726825d0af5f729cebd5821db510b11b1cfad8faad88a03f1befd49fb9129b2",
+    "component": "metrics"
+  },
+  {
+    "path": "i3d_torchscript.pt",
+    "source": "https://huggingface.co/kiwhansong/DFoT/resolve/0959defb4c4fe010f84791d732cc978ad7d49fef/metrics_models/i3d_torchscript.pt",
+    "bytes": 51235320,
+    "sha256": "bec6519f66ea534e953026b4ae2c65553c17bf105611c746d904657e5860a5e2",
+    "component": "metrics"
+  },
+  {
+    "component": "flux",
+    "path": "flux1-schnell/vae/config.json",
+    "bytes": 774,
+    "sha256": "bc1e208f414a315365fbecf426838f43b87c9d5c051219e0968a56e2644b2998",
+    "source": "https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/741f7c3ce8b383c54771c7003378a50191e9efe9/vae/config.json",
+    "requires_hf_auth": true
+  },
+  {
+    "component": "flux",
+    "path": "flux1-schnell/vae/diffusion_pytorch_model.safetensors",
+    "bytes": 167666902,
+    "sha256": "f5b59a26851551b67ae1fe58d32e76486e1e812def4696a4bea97f16604d40a3",
+    "source": "https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/741f7c3ce8b383c54771c7003378a50191e9efe9/vae/diffusion_pytorch_model.safetensors",
+    "requires_hf_auth": true
+  }
+]

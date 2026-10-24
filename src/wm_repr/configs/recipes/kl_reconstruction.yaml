@@ -1,0 +1,8 @@
+extends: matched_budget_reconstruction
+ae:
+  model:
+    encoder:
+      kl_weight: 1.0e-06
+      kl_without_sampling: true
+seeds:
+- 1234

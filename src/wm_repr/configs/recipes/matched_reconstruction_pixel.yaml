@@ -1,0 +1,43 @@
+method: pixel
+seeds:
+- 0
+- 1
+- 2
+ae:
+  model:
+    encoder:
+      future_recon_weight: 0.5
+  data:
+    params:
+      fixed_eval_pairs: false
+      sample_other: true
+  training:
+    dataloader:
+      batch_size: 24
+      use_global_rng: true
+    optimizer:
+      defaults:
+        lr: 2.449489742783178e-06  # 5e-7 * sqrt(batch size 24)
+    trainer:
+      max_steps: 300000
+  validation:
+    reconstruction_threshold: 0.0345
+wm:
+  model:
+    model_dim: 1024
+    layers: 16
+    heads: 16
+  training:
+    latent_normalization: global
+    # Validated over all ten frames, the context frame included.
+    exclude_context_from_metrics: false
+    base_learning_rate: 3.0e-05
+    dataloader:
+      batch_size: 4
+      use_global_rng: true
+    warmup:
+      enabled: false
+    trainer:
+      max_steps: 238896
+      accumulate_grad_batches: 1
+      gradient_clip_val: null

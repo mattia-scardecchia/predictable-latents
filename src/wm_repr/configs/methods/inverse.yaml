@@ -1,0 +1,33 @@
+model:
+  class_name: LitHierarchicalInverseDynamics
+  encoder:
+    kl_weight: 0.0
+    future_pred_weight: 0.0
+    inverse_weight: 0.7
+  predictor:
+    type: conv
+    action_encoder_layers: 2
+  inverse:
+    action_mean:
+    - 0.0179952357027009
+    - 0.005845523582337696
+    - 0.02579143849991118
+    - 9.20447032088566e-05
+    - -0.009478805669527721
+    - 0.0010788231659554187
+    action_std:
+    - 0.3563408941241525
+    - 0.5012962628282994
+    - 0.4929991461489181
+    - 0.15479180034464704
+    - 0.16560082614788524
+    - 0.4111791203561981
+  hierarchical_decoder:
+    num_heads: 8
+    dropout: 0.0
+    num_groups: 32
+    conv:
+      context_dim: 512
+    vit:
+      context_dim: 768
+      adapter_interval: 4

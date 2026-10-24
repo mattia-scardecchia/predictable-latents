@@ -1,0 +1,35 @@
+extends: matched_budget_latent
+# Temporal weights in the paper: model.encoder.future_pred_weight = 0, 0.1, 0.3, 0.7 (via --set).
+seeds:
+- 1234
+ae:
+  repr:
+    type: rae
+    rae:
+      encoder_cls: Dinov2withNorm
+      encoder_config_path: ${assets_root}/rae-dinov2-wreg-base/dinov2
+      encoder_input_size: 224
+      encoder_patch_size: 14
+      decoder_patch_size: 16
+      encoder_params:
+        dinov2_path: ${assets_root}/rae-dinov2-wreg-base/dinov2
+        normalize: true
+      decoder_config_path: __PACKAGED_RAE_DECODER__
+      normalization_stat_path: ${assets_root}/rae-dinov2-wreg-base/stat.pt
+      pretrained_decoder_path: ${assets_root}/rae-dinov2-wreg-base/decoder_ViTXL_n08.pt
+  model:
+    encoder:
+      future_pred_weight: 0.1
+wm:
+  model:
+    patch_size: 1
+    model_dim: 768
+    heads: 12
+    layers: 14
+    decoder_dim: 2048
+    decoder_depth: 2
+    decoder_heads: 16
+    prediction_type: x
+    time_warp_gamma: 7.0
+  training:
+    latent_normalization: zscore
