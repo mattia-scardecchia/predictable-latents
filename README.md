@@ -4,6 +4,8 @@ Mattia Scardecchia, Sherry Yang
 
 New York University
 
+Paper: [arXiv:2610.34663](https://arxiv.org/abs/2610.34663)
+
 ![Method overview](figures/overview.png)
 
 *Our recipe for video world models. (1) The autoencoder is fine-tuned on nearby frames with a
@@ -177,7 +179,7 @@ python -m wm_repr.worldgym.calibration summary --manifest worldgym-calibration.j
 @article{scardecchia2026predictable,
   title   = {Video World Models Need Predictable Latents},
   author  = {Scardecchia, Mattia and Yang, Sherry},
-  journal = {arXiv preprint},
+  journal = {arXiv preprint arXiv:2610.34663},
   year    = {2026}
 }
 ```
